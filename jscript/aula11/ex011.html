@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>  
+        <h1>Pais</h1>
+        Pais: <input type="text" name="pais" id="pais">
+        <input type="button" value="verificar" onclick="verificar()">
+        <div id="res">
+
+        </div>
+        <script>
+            
+            function verificar(){
+                var txtInput = window.document.querySelector('input#pais');
+                var res = window.document.querySelector('div#res');
+                var txtpais = txtInput.value 
+                
+                res.innerHTML = `<p>Voçê digitou ${txtpais}</p>`;
+
+                if (txtpais == 'Portugal') 
+                {
+                    res.innerHTML += `<p>Voçê é Português</p>`;
+                }
+                else
+                {
+                    res.innerHTML += `<p>Estrangueiro</p>`;
+                }
+                res.innerHTML += `<p>Tenha um Bom dia</p>`;
+                
+            }
+        </script>
+    </body>
+</html>
