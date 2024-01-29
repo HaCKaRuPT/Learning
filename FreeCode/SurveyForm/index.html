@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <fieldset>
+        <h1 id="title"> Formulário Criar Utlizador </h1>
+        <p id="description">Página para teste de final de Módulo:</p>
+    </fieldset>
+    <form action="#" id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name"> Nome: <input type="text" name="name" id="name" placeholder="Rui Maia" required></label>
+            <label id="email-label" for="email"> Email: <input type="email" name="email" id="email" placeholder="example@email.com" required></label>
+            <label id="number-label" for="number"> Idade: <input type="number" name="number" id="number" min="30" max="120" placeholder="30" required></label>
+            <label for="dropdown"> Onde conheceu este site?
+            <select name="dropdown" id="dropdown" required>
+                <option value="">Escolha uma Opção</option>
+                <option value="1">GitHub</option>
+                <option value="2">LinkedIn</option>
+                <option value="3">Free Code Camp</option>
+                <option value="4">Outro</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <h4> Sobre o Layout: </h4>
+            <label for="radio_1">O layout do site agrada: <input type="radio" class="inline" name="radiocheck" id="radio_1" value="1" checked></label>
+            <label for="radio_2">O layout do site não agrada: <input type="radio" class="inline" name="radiocheck" id="radio_2" value="2"></label>
+        </fieldset>
+        <fieldset>    
+            <h4> O que gosta ou desgosta: </h4>
+            <label for="check_1">Cor de Fundo: <input type="checkbox" class="inline" name="check_1" id="check_1" value="1"></label>
+            <label for="check_2">Responsividade do Site: <input type="checkbox" class="inline" name="check_2" id="check_2" value="2"></label>
+            <label for="check_3">Mais dados: <input type="checkbox" class="inline" name="check_3" id="check_3" value="3"></label>
+            <label for="check_4">Outros: <input type="checkbox" class="inline" name="check_4" id="check_4" value="4"></label>
+        </fieldset>
+        <fieldset>
+            <h4> Deixa um comentário: </h4>
+                <textarea name="" id="" cols="30" rows="3" placeholder="Comentário ..."></textarea>
+            <input type="submit" id="submit" name="submit">
+        </fieldset>
+    </form>
+</fieldset>
+</body>
+</html>
