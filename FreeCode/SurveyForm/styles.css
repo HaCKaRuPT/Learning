@@ -39,5 +39,10 @@ input[type="submit"] {
     display: inline;
 }
 fieldset{
-  
+  max-width: 600px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 1em;
+  border-radius: 25px;
+  background-color: rgb(14, 14, 107);
 }
