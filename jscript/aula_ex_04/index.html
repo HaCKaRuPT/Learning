@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contagem</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <p>Inicio:  <input type="text" name="inicio" id="inicio" required></p>
+            <p>Fim:     <input type="text" name="fim" id="fim" required></p>
+            <p>Passo:   <input type="text" name="passo" id="passo"></p>
+            <p>
+                <input type="submit" value="Contar" onclick="contar()">
+            </p>
+        </div>
+
+        <div id="res">
+            Aguardando dados ...
+        </div>
+    </section>
+
+    <footer>
+        <p>Curso Javascript</p>
+    </footer>
+    
+</body>
+</html>
